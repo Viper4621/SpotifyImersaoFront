@@ -153,3 +153,15 @@ body {
 .sidebar .cookies a:hover{
     text-decoration: underline;
 }
+
+.languages .languages__button{
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid #878787;
+    color: #FFF;
+    font-weight: bold;
+    cursor: pointer;
+    width: 170px;
+    margin: 8px;
+    padding: 8px;   
+}
