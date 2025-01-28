@@ -2,6 +2,21 @@ body {
     background-color: brown;
 }
 
-h1 {
-    color:  #fff;
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 12px;
+    width: 300px;        
+}
+
+.sidebar__navigation{
+    background-color:  #121212;
+    border-radius: 8px;
+    padding: 16px 0 0 16;
+}
+
+.logo img {
+    width: 80px;
 }
