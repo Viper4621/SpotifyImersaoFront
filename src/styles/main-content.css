@@ -1,7 +1,7 @@
  /* Header */
 
  .main-container{
-    max-width: 60vw;
+    max-width: 65vw;
     height: 100vh;
     margin-left: 320px;
     margin-right: 56px;
@@ -96,3 +96,27 @@
     border-radius: 40px; 
 }
 
+.playlist-container{
+   height: 68vh;
+   padding-top: 16px;
+   margin: 10px;
+   border-radius: 10px;
+   background-color: var(--bg-color-bgnav);
+}
+
+.playlist {
+    margin: 24px;
+}
+
+.playlist #greeting{
+   color: #FFF;
+   font-size: 32px;
+   font-weight: 700;
+   margin-bottom: 48px;
+}
+
+.playlist .greeting-subtitle{
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 700;
+}
