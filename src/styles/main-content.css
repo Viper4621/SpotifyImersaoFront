@@ -5,6 +5,7 @@
     height: 100vh;
     margin-left: 320px;
     margin-right: 56px;
+    margin-top: 12px;
  }
 
  .header__navigation{
@@ -70,4 +71,26 @@
     /* text-overflow so funciona com overflow serve pra quando texto passa tamanho ele quebra e deixa ... no final  */
     text-overflow: ellipsis;
     overflow: hidden;
+    /* abaixo e para não ter quebra de linha */
+    white-space: nowrap;
+    /* outline serve para tirar a marcação da borda do input quando digitamos */
+    outline: none;
+} 
+
+.header__login .subscribe{
+    color: var(--bg-color-subscribe);
+    font-size: 16px;
+    font-weight: 700;
+    background-color: transparent;
+    margin-left: 32px;
 }
+
+.header__login .login{
+    width: 100px;
+    height: 48px;
+    color: var(--bg-color-login);
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 40px; 
+}
+
