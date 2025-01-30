@@ -52,4 +52,22 @@
     height: 48px;
     margin-left: 8px;
     background-color: var(--bg-color-search);
+    border-radius: 500px;
+    border: 1px solid transparent;
+}
+
+.header__search img{
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+}
+
+.header__search input{
+    background: transparent;
+    border: none;
+    padding: 0px 100px 0 12px;
+    color: #FFF;
+    /* text-overflow so funciona com overflow serve pra quando texto passa tamanho ele quebra e deixa ... no final  */
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
