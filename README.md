@@ -6,3 +6,5 @@ para rodar projeto instalar json server === npm i json-server -g ===versão glob
 depois json-server --watch api-artists/artists.json --port 3000 ==== para referenciar o caminho e executar nossa api fake
 
 vamos iniciar nosso projeto na sequencia sempre lembrar de iniciar json server e referenciar
+
+qualquer alteração api tem que estar atualizada em desenvolvimento do projeto para acessar nossa api fake
