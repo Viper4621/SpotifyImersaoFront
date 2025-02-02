@@ -11,6 +11,7 @@ function requestApi(searchTerm) {
 
 function displayResults(result) {
   resultPlaylist.classList.add("hidden");
+
   const artistName = document.getElementById("artist-name");
   const artistImage = document.getElementById("artist-img");
 
@@ -26,7 +27,7 @@ document.addEventListener("input", function () {
   const searchTerm = searchInput.value.toLowerCase();
   if (searchTerm === "") {
     resultPlaylist.classList.add("hidden");
-    resultArtist.classList.add("hidden");
+    resultArtist.classList.remove("hidden");
     return;
   }
 
