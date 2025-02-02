@@ -4,3 +4,5 @@ Imersão frontend alura projeto criação de spotify
 
 para rodar projeto instalar json server === npm i jsonserver
 depois jsonserver --watch api-artists/artists.json ==== para referenciar o caminho e executar nossa api fake
+
+vamos iniciar nosso projeto na sequencia sempre lembrar de iniciar json server e referenciar
