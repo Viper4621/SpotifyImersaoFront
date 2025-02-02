@@ -5,10 +5,19 @@ const resultPlaylist = document.getElementById("result-playlists");
 function requestApi(searchTerm) {
   const url = `http://localhost:3000/artists?name_like=${searchTerm}`;
   fetch(url)
-    .then((response) => response.json())
+    .then((response) => {
+      //abaixo estamos verificando se a resposta da requisição foi bem sucedida se a resposta for diferente vamos retornar um erro ao usuario
+      if (!response.ok) {
+        throw new Error("Erro na requisição");
+      }
+      return response.json();
+    })
     .then((result) => {
-      //   console.log("Resultados encontrados:", result); // Para debug
       displayResults(result);
+    })
+    .catch((error) => {
+      console.error("Erro:", error);
+      // como fizemos acima o throw new Error("Erro na requisição"); o catch vai pegar esse erro e exibir para o usuario no console
     });
 }
 
@@ -41,7 +50,8 @@ function displayResults(result) {
 
 document.addEventListener("input", function () {
   const searchTerm = searchInput.value.toLowerCase();
-  if (searchTerm === "") {
+  //aqui aklém de verificar se o campo de pesquisa está vazio estamos verificando se o tamanho do campo é menor que 3 se deixar sem e digitar algo com menos de 3 caracteres o codigo retornar cards quem não tem nada a ver com o que foi digitado
+  if (searchTerm === "" || searchTerm.length < 3) {
     resultPlaylist.classList.add("hidden");
     resultArtist.classList.add("hidden");
     return;
