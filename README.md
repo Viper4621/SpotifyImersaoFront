@@ -8,3 +8,5 @@ depois json-server --watch api-artists/artists.json --port 3000 ==== para refere
 vamos iniciar nosso projeto na sequencia sempre lembrar de iniciar json server e referenciar
 
 qualquer alteração api tem que estar atualizada em desenvolvimento do projeto para acessar nossa api fake
+
+atualização 02/02/2025 20:03
