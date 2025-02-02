@@ -4,7 +4,15 @@ const resultPlaylists = document.getElementById("result-playlists");
 
 function requestApi(searchValue) {
   const url = `http://localhost:3000/artists?name_like=${searchValue}`;
-  fetch();
+  fetch(url)
+    .then((Response) => Response.json())
+    .then((result) => displayResults(result));
+}
+
+function displayResults() {
+  resultPlaylists.classList.add("hidden");
+  const artistName = document.getElementById("artist-name");
+  const artistImage = document.getElementById("artist-img");
 }
 
 document.addEventListener("input", function () {
@@ -14,4 +22,5 @@ document.addEventListener("input", function () {
     resultArtists.classList.remove("hidden");
     return;
   }
+  requestApi(searchValue);
 });
