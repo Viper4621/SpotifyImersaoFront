@@ -10,3 +10,6 @@ vamos iniciar nosso projeto na sequencia sempre lembrar de iniciar json server e
 qualquer alteração api tem que estar atualizada em desenvolvimento do projeto para acessar nossa api fake
 
 atualização 02/02/2025 20:03
+
+03/02/2025 iremos passar o projeto para react interessante usar next.js
+npx create-react-app spotify-react
