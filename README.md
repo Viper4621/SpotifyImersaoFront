@@ -20,3 +20,6 @@ cd = spotify-react = entrar na pasta do projeto
 agora subir o projeto no react // temos que instalar web-vitals == npm i web-vitals
 agora tiramos o erro inicial do web vitals
 conceito jsx === html e js na mesma estrutura === react
+
+como usamos fontawsome temos que instalar a biblioteca no projeto para usar os icones
+npm install @fortawesome/react-fontawesome @fortawesome/free-solid-svg-icons
