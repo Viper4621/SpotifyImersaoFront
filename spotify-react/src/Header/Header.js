@@ -17,8 +17,7 @@ const Header = () => {
       </div>
       <div className="header__search">
         <img src={search} alt="busca" />
-        <i
-          nput
+        <input
           id="search-input"
           type="text"
           maxlength="800"
