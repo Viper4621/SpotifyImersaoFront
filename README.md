@@ -13,3 +13,9 @@ atualização 02/02/2025 20:03
 
 03/02/2025 iremos passar o projeto para react interessante usar next.js
 npx create-react-app spotify-react
+comands:
+npm start = run
+npm run build = production
+cd = spotify-react = entrar na pasta do projeto
+agora subir o projeto no react // temos que instalar web-vitals == npm i web-vitals
+agora tiramos o erro inicial do web vitals
