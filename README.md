@@ -23,3 +23,5 @@ conceito jsx === html e js na mesma estrutura === react
 
 como usamos fontawsome temos que instalar a biblioteca no projeto para usar os icones
 npm install @fortawesome/react-fontawesome @fortawesome/free-solid-svg-icons
+
+03/02/2025 estou com problema no script.js de buscar no main os dados e retornar do array
